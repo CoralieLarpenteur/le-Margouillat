@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>déclarer un script</h1>
+
+    <script type="text/javascript">
+      const customer = {
+        name: 'élodie',
+        gender: 'f'
+      }
+      const message = `bonjour ${customer.name}, vous êtes notre meilleur${customer.gender === 'f' ? 'e' : ''} client${customer.gender === 'f' ? 'e' : ''}!`;
+      console.log(message)
+    </script>
+
+    <script src="01-declaration.js" charset="utf-8"></script>
+  </body>
+</html>

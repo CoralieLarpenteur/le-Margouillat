@@ -1,0 +1,51 @@
+.bacground_black{
+  background-color: #08090A;
+}
+.text_black{
+  color: #08090A;
+}
+
+.bacground_light_green{
+  background-color: #747217;
+}
+.text_light_green{
+  color: #747217;
+}
+
+.bacground_green{
+  background-color: #636940;
+}
+.text_green{
+  color: #636940;
+}
+
+.bacground_dark_green{
+  background-color: #474A2C;
+}
+.text_dark_green{
+  color: #474A2C;
+}
+
+.bacground_brown{
+  background-color: #907752;
+}
+.text_brown{
+  color: #907752;
+}
+.noPaddind{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.noMarging{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.noBorderRadius{
+  border-radius: 0px 0px 0px 0px;
+}
+.noBoder{
+  border: 0px 0px 0px 0px;
+}
+.alignRight{
+  text-align: right;
+}
