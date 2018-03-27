@@ -21,7 +21,7 @@
           <?php if ($_SESSION['is_admin'] == 1) :?>
             <a class="dropdown-item" href="admin/index.php">admin</a>
           <?php else :?>
-            <a class="dropdown-item" href="account.php">mon compte</a>
+            <a class="dropdown-item" href="account.php?user_id=<?php echo $_SESSION['user_id'] ?>">mon compte</a>
           <?php endif; ?>
           <a class="dropdown-item" href="index.php?logout">déconection</a>
         </div>

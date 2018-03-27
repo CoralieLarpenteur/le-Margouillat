@@ -19,6 +19,9 @@ if(isset($_POST['login'])){
 			//on prend en session ses droits d'administration pour vérifier s'il a la permission d'accès au back-office
 			$_SESSION['is_admin'] = $user['is_admin'];
 			$_SESSION['user'] = $user['firstname'];
+			$_SESSION['user_lastname'] = $user['lastname'];
+			$_SESSION['user_birthday'] = $user['birthday'];
+			$_SESSION['user_civility'] = $user['civility'];
 			//détruire $_SESSION["user_id"] sera utilisé pour une requête de pré-remplissage du formulaire user-profile.php
 			$_SESSION['user_id'] = $user['id'];
 		}
@@ -73,6 +76,10 @@ if(isset($_POST['register'])){
 		//une fois l'utilisateur enregistré, on le connecte en créant sa session
 		$_SESSION['is_admin'] = 0; //PAS ADMIN !
 		$_SESSION['user'] = $_POST['firstname'];
+		$_SESSION['user_lastname'] = $user['lastname'];
+		$_SESSION['user_birthday'] = $user['birthday'];
+		$_SESSION['user_civility'] = $user['civility'];
+		$_SESSION['user_id'] = $user['id'];
     }
 }
 

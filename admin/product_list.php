@@ -95,7 +95,7 @@ $product = $query->fetchall();
 									<td><?php echo $product['in_stock'] ?></td>
 									<td>
 										<a href="product_form.php?product_id=<?php echo $product['id']; ?>&action=edit" class="btn btn-warning">Modifier</a>
-										<a onclick="return confirm('Are you sure?')" href="product_list.php?article_id=<?php echo $product['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
+										<a onclick="return confirm('Are you sure?')" href="product_list.php?product_id=<?php echo $product['id']; ?>&action=delete" class="btn btn-danger">Supprimer</a>
 									</td>
 								</tr>
 

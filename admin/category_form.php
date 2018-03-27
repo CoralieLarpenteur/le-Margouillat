@@ -8,7 +8,7 @@
 
   if(isset($_POST['save']) ){
     $query = $db->prepare('INSERT INTO category (name, summary) VALUES (?, ?)');
-    $result = $query->execute(
+    $newCategory = $query->execute(
       [
         $_POST['name'],
         $_POST['summary']

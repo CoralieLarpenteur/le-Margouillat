@@ -6,7 +6,7 @@
     <nav class="navbar" style="padding-left: 0px;padding-right: 0px;">
       <form class="form-inline col-12" action="search.php?search=<?php echo $_POST['search'] ?>" method="post">
         <input class="form-control mr-sm-2 col-10" type="search" placeholder="Search" aria-label="Search">
-        <a href="search.php?search=<?php echo $_POST['search'] ?>"><button class="btn btn-outline my-2 my-sm-0 col-1" type="submit"><i class="fas fa-search"></i> </button></a>
+        <button class="btn btn-outline my-2 my-sm-0 col-1" type="submit"><i class="fas fa-search"></i> </button>
       </form>
     </nav>
   </div>
@@ -23,7 +23,7 @@
           <?php else :?>
             <a class="dropdown-item" href="../account.php">mon compte</a>
           <?php endif; ?>
-          <a class="dropdown-item" href="../index.php?logout">déconection</a>
+          <a class="dropdown-item" href="../index.php?logout">déconnexion</a>
         </div>
       </div>
     <?php else :?>

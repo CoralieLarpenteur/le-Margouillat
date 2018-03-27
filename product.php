@@ -52,12 +52,12 @@ if(isset($_GET['id'])){
             <div class="card mb-3" style="max-width: 18rem;">
               <div class="card-body">
                 <h3 class="card-title"> <?php echo $product['price']; ?>€ <sub>TTC</sub> </h3>
-								<select class="form-control col-3" name="amount">
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
+								<select class="form-control col-4" name="amount">
+									<?php $quantity = 0; ?>
+									<?php while ($quantity < $product['in_stock']) :?>
+										<?php $quantity = $quantity+1 ?>
+										<option value="<?php echo $quantity ?>"><?php echo $quantity ?></option>
+									<?php endwhile; ?>
 								</select>
 								<?php if ($product['in_stock']>=1): ?>
 										<p class="card-text alignRight" style="color:#28a745;text-align: right;"> <i class="fas fa-truck fa-1x"></i> en stock </p>
