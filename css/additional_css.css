@@ -1,37 +1,29 @@
-.bacground_black{
-  background-color: #08090A;
+.background_platinum{
+  background-color: #E5E5E5;
 }
-.text_black{
-  color: #08090A;
+.text_platinum{
+  color: #E5E5E5;
 }
-
-.bacground_light_green{
-  background-color: #747217;
+.bacground_dark{
+  background-color: #22252A;
 }
-.text_light_green{
-  color: #747217;
+.text_dark{
+  color: #22252A;
 }
-
-.bacground_green{
-  background-color: #636940;
+.bacground_blue{
+  background-color: #253651;
 }
-.text_green{
-  color: #636940;
+.text_blue{
+  color: #253651;
 }
-
-.bacground_dark_green{
-  background-color: #474A2C;
+.text_white{
+  color: #FFFFFF;
 }
-.text_dark_green{
-  color: #474A2C;
+.background_white{
+  background-color: #FFFFFF;
 }
 
-.bacground_brown{
-  background-color: #907752;
-}
-.text_brown{
-  color: #907752;
-}
+
 .noPaddind{
   padding-left: 0px;
   padding-right: 0px;
@@ -48,4 +40,29 @@
 }
 .alignRight{
   text-align: right;
+}
+a{
+text-decoration:none;
+}
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 90px;
+  z-index: 1;
+}
+.nav{
+  position: fixed;
+  top: 120px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+}
+.card :hover{
+  box-shadow: 6px 6px 20px black;
+}
+
+.impact{
+  font-family:Impact;
 }

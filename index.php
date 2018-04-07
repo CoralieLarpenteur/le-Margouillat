@@ -19,56 +19,29 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
     <?php require_once 'parcial/head.php' ?>
     <title>le margouillat</title>
   </head>
-  <body style="background-image: url(img/background.png);">
+  <body>
     <div class="row noMarging">
-      <div class="col-10 offset-1 noPaddind"style="padding-top: 20px;">
+      <div class="col-12 noPaddind"style="padding-top: 20px;font-family:Impact;">
         <?php require "parcial/header.php"; ?>
       </div>
-      <div class="col-10 offset-1 noPaddind"style="background:white;">
-        <div class="row noMarging">
+			<div class="col-12 noPaddind" style="font-family:Impact;">
+				<?php require_once 'parcial/nav.php' ?>
+			</div>
+			<div class=""style="height:155px">
+
+			</div>
           <div class="col-12 noPaddind">
-            <?php require_once 'parcial/nav.php' ?>
+            <img class="d-block w-100" src="img/img2.jpg" alt="Second slide">
           </div>
-        </div>
-        <div class="row noMarging">
-          <div class="col-12 noPaddind">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/img.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/img2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/img3.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/img4.jpg" alt="fourth slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/img5.jpg" alt="fiveth slide">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row noMarging" style="padding-top:20px;">
-          <div class="col-12 noPaddind">
-            <h2>les nouveautés</h2>
+          <div class="col-10 offset-1 noPaddind" style="font-family:Impact;">
+            <h1>Nos nouveautés</h1>
             <div class="row no noMarging">
               <?php
               $query = $db->query('SELECT * FROM product LIMIT 0, 4');
               $product = $query->fetch();
                ?>
-                <div class="card col-3 bacground_dark_green noBorderRadius">
+                <div class="card col-3 noBorderRadius">
                   <div class="card-body text_brown">
                     <a href="product?id=<?php echo $product['id'] ?>"><h5 class="card-title text_brown"> <?php echo $product['title'] ?> </h5>
                     <img class="card-img-top" src="img/product/<?php echo $product['image']?>" alt="Card image cap">
@@ -94,7 +67,6 @@ if(isset($_GET['logout']) && isset($_SESSION['user'])){
             </div>
           </div>
         </div>
-      </div>
     </div>
 
 

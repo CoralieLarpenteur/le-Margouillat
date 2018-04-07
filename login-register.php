@@ -22,6 +22,10 @@ if(isset($_POST['login'])){
 			$_SESSION['user_lastname'] = $user['lastname'];
 			$_SESSION['user_birthday'] = $user['birthday'];
 			$_SESSION['user_civility'] = $user['civility'];
+			$_SESSION['user_address'] = $user['address'];
+			$_SESSION['user_country'] = $user['country'];
+			$_SESSION['user_postal_code'] = $user['postal_code'];
+			$_SESSION['user_email'] = $user['email'];
 			//détruire $_SESSION["user_id"] sera utilisé pour une requête de pré-remplissage du formulaire user-profile.php
 			$_SESSION['user_id'] = $user['id'];
 		}
@@ -76,10 +80,14 @@ if(isset($_POST['register'])){
 		//une fois l'utilisateur enregistré, on le connecte en créant sa session
 		$_SESSION['is_admin'] = 0; //PAS ADMIN !
 		$_SESSION['user'] = $_POST['firstname'];
-		$_SESSION['user_lastname'] = $user['lastname'];
-		$_SESSION['user_birthday'] = $user['birthday'];
-		$_SESSION['user_civility'] = $user['civility'];
-		$_SESSION['user_id'] = $user['id'];
+		$_SESSION['user_lastname'] = $_POST['lastname'];
+		$_SESSION['user_birthday'] = $_POST['birthday'];
+		$_SESSION['user_civility'] = $_POST['civility'];
+		$_SESSION['user_address'] = $_POST['address'];
+		$_SESSION['user_country'] = $_POST['country'];
+		$_SESSION['user_postal_code'] = $_POST['postal_code'];
+		$_SESSION['user_email'] = $_POST['email'];
+		$_SESSION['user_id'] = $_POST['id'];
     }
 }
 
