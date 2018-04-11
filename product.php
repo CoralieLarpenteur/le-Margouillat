@@ -28,7 +28,7 @@ if(isset($_GET['id'])){
     <?php require_once 'parcial/head.php' ?>
     <title> <?php echo $product['title'];?> - le Margouillat </title>
   </head>
-  <body style="background-image: url(img/background.png);">
+  <body style="margin-top:155px">
     <div class="row noMarging">
       <div class="col-10 offset-1 noPaddind"style="padding-top: 20px;">
         <?php require "parcial/header.php"; ?>
@@ -70,5 +70,6 @@ if(isset($_GET['id'])){
         </div>
       </div>
     </div>
+		<?php require_once 'parcial/footer.php'; ?>
   </body>
 </html>

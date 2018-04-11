@@ -110,7 +110,7 @@ if(isset($_SESSION['user'])){
     <title></title>
     <?php require 'parcial/head.php' ?>
   </head>
-  <body style="background-image: url(img/background.png);">
+  <body style="margin-top:155px">
     <div class="row noMarging">
       <div class="col-10 offset-1 noPaddind"style="padding-top: 20px;">
         <?php require 'parcial/header.php'; ?>
@@ -221,6 +221,6 @@ if(isset($_SESSION['user'])){
     </div>
 
 
-
+		<?php require_once 'parcial/footer.php'; ?>
   </body>
 </html>

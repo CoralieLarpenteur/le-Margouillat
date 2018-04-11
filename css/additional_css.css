@@ -22,6 +22,12 @@
 .background_white{
   background-color: #FFFFFF;
 }
+.text_red{
+  color: #FF0037;
+}
+.background_red{
+  background-color: #FF0037;
+}
 
 
 .noPaddind{
@@ -59,10 +65,17 @@ text-decoration:none;
   right: 0px;
   z-index: 2;
 }
-.card :hover{
-  box-shadow: 6px 6px 20px black;
+.cart :hover{
+  box-shadow: 6px 6px 6px 6px 20px black;
 }
-
+.nocart :hover{
+  box-shadow: none;
+}
+.product_img{
+  width:400px;
+  height:200px;
+  background-size: cover;
+}
 .impact{
   font-family:Impact;
 }

@@ -34,7 +34,7 @@ if(isset($_GET['category_id'])){
     <?php require 'parcial/head.php'; ?>
     <title><?php if(isset($currentCategory)): ?><?php echo $currentCategory['name']; ?><?php else : ?>Tous les produit<?php endif; ?> - le margouillat</title>
   </head>
-  <body style="background-image: url(img/background.png);">
+  <body style="margin-top:155px">
     <div class="row noMarging">
       <div class="col-10 offset-1 noPaddind"style="padding-top: 20px;">
         <?php require 'parcial/header.php'; ?>
@@ -46,12 +46,12 @@ if(isset($_GET['category_id'])){
           </div>
         </div>
         <div class="row noMarging">
-          <div class="col-12 noPaddind">
+          <div class="col-12 noPaddind impact">
             <h2><?php echo $currentCategory['name']; ?></h2>
           </div>
         </div>
         <div class="row noMarging">
-          <div class="col-12 noPaddind">
+          <div class="col-12 noPaddind impact">
              <div class="row noMarging">
                <?php foreach ($product as $key => $product): ?>
                  <div class="card col-3 bacground_dark_green noBorderRadius">
@@ -70,5 +70,6 @@ if(isset($_GET['category_id'])){
         </div>
       </div>
     </div>
+    <?php require_once 'parcial/footer.php'; ?>
   </body>
 </html>

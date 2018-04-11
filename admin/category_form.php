@@ -68,7 +68,7 @@ if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == '
     <title>admin category - le Margouillat</title>
     <?php require 'parcial/head.php'; ?>
   </head>
-  <body style="background-image: url(../img/background.png);">
+  <body style="margin-top:155px">
     <div class="row noMarging">
 			<div class="col-10 offset-1 noPaddind"style="padding-top: 20px;">
         <?php require "parcial/header.php"; ?>
@@ -124,5 +124,6 @@ if(isset($_GET['category_id']) && isset($_GET['action']) && $_GET['action'] == '
         </div>
 			</div>
 		</div>
+    <?php require_once 'parcial/footer.php'; ?>
   </body>
 </html>

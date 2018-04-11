@@ -6,7 +6,7 @@
     <?php require_once 'parcial/head.php' ?>
     <title><?php echo $_SESSION['user'] ?> - le margouillat</title>
   </head>
-  <body style="background-image: url(img/background.png);">
+  <body style="margin-top:155px">
     <?php if (!isset($_SESSION['user'])) :?>
       <?php
       header('location:index.php');
@@ -55,5 +55,6 @@
         </div>
       </div>
     <?php endif; ?>
+    <?php require_once 'parcial/footer.php'; ?>
   </body>
 </html>
